@@ -1,0 +1,537 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body,
+html {
+  height: 100%;
+  line-height: 1.875;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+svg {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  font-size: 16px;
+  --fc-green: rgba(95, 180, 162, 1);
+  --fc-darkBlue: rgba(32, 58, 76, 1);
+  --fc-darkGrayBlue: rgba(51, 50, 61, 1);
+  --fc-gray-1: rgba(250, 250, 250, 1);
+  --fc-gray-2: rgba(234, 234, 235, 1);
+  --fc-red: rgba(244, 48, 48, 1);
+  --ff-primary: "Public Sans", sans-serif;
+  --ff-secondary: "Ibarra Real Nova", serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fs-xl: 3.125rem;
+  --fs-l: 2.5rem;
+  --fs-m: 2rem;
+  --fs-sm: 0.75rem;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--fc-gray-1);
+  color: var(--fc-darkGrayBlue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-secondary);
+}
+
+h1 {
+  font-size: 2.1875rem;
+  font-size: clamp(2.1875rem, 1.7613636364rem + 1.8181818182vw, 3.125rem);
+  line-height: 3.125rem;
+  letter-spacing: -0.028rem;
+  font-weight: var(--fw-700);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.022rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.018rem;
+  font-weight: var(--fw-400);
+}
+
+.green {
+  color: var(--fc-green);
+}
+
+.wrapper {
+  max-width: 69.44rem;
+  margin-inline: auto;
+  padding: 0 2.56rem;
+}
+
+.homepage_header {
+  scroll-behavior: smooth;
+}
+.homepage_header .wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+.homepage_header picture {
+  padding-top: 1rem;
+  grid-column: 1/-1;
+}
+.homepage_header picture img {
+  margin-inline: auto;
+  width: 100%;
+}
+.homepage_header .header_Info {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--fc-gray-1);
+  grid-column: 1/6;
+}
+.homepage_header .header_Info h1 {
+  padding: 2.5rem 2rem 2.5rem 0;
+}
+
+.homepage_aboutme_section .wrapper {
+  padding-top: 8.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  align-items: center;
+  gap: 1rem;
+}
+.homepage_aboutme_section .wrapper .about_me_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-inline: auto;
+  height: 100%;
+  border-bottom: 1px solid var(--fc-gray-2);
+  border-top: 1px solid var(--fc-gray-2);
+}
+.homepage_aboutme_section .wrapper .about_me_info p {
+  padding-top: 1.75rem;
+  max-width: 350px;
+}
+.homepage_aboutme_section .wrapper picture {
+  margin-bottom: 1rem;
+}
+
+.aboutme_contact_section {
+  margin: 6rem 0;
+}
+.aboutme_contact_section .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.aboutme_contact_section h2 {
+  max-width: 21.88rem;
+}
+.aboutme_contact_section .btn_regular {
+  margin: 0;
+}
+
+footer {
+  background-color: var(--fc-darkGrayBlue);
+}
+
+.portfolio_detail_header {
+  margin-top: 5rem;
+}
+.portfolio_detail_header img {
+  min-height: 8.75rem;
+}
+
+.portfolio_detail_section {
+  padding-top: 7.25rem;
+}
+.portfolio_detail_section .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 5rem;
+}
+.portfolio_detail_section .wrapper .card {
+  margin: 0;
+  justify-items: start;
+}
+.portfolio_detail_section .wrapper .card_info {
+  gap: 1.8rem;
+}
+.portfolio_detail_section .wrapper h2 {
+  font-weight: var(--fw-700);
+}
+.portfolio_detail_section .wrapper .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.portfolio_detail_section .wrapper .detail div:first-of-type {
+  margin-bottom: 2.5rem;
+}
+.portfolio_detail_section .wrapper .detail div:first-of-type p {
+  margin-top: 1.75rem;
+}
+.portfolio_detail_section .wrapper .detail div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 68.75em) {
+  .homepage_header .header_Info {
+    grid-column: 1/10;
+  }
+  .homepage_header .header_Info h1 {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+  }
+}
+@media (max-width: 56.31em) {
+  .homepage_header picture img {
+    max-height: 600px;
+  }
+  .portfolio_section img {
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  .portfolio_section .card_info h2 {
+    padding-top: 3.22rem;
+  }
+  .portfolio_section .card_footer {
+    padding-bottom: 3.22rem;
+  }
+}
+@media (max-width: 43.75em) {
+  .homepage_header picture img {
+    max-height: 600px;
+  }
+  .homepage_aboutme_section .wrapper {
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding-top: 4rem;
+  }
+  .portfolio_section .card .card_info {
+    grid-row: 2;
+  }
+  .portfolio_section .card .card_footer {
+    padding-bottom: 3.22rem;
+  }
+  .aboutme_contact_section .gray_line {
+    display: none;
+  }
+  .aboutme_contact_section .wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 40.63em) {
+  .homepage_header .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .homepage_header .header_Info {
+    position: relative;
+  }
+  .homepage_header .header_Info h1 {
+    padding: 2rem 0;
+  }
+  .homepage_aboutme_section .about_me_info {
+    margin-top: 1rem;
+  }
+  .aboutme_contact_section .wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.navbar {
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  padding: 2rem 0;
+}
+.navbar svg {
+  fill: #33323d;
+  transition: all ease-in-out 0.3s;
+}
+.navbar svg:hover {
+  fill: var(--fc-green);
+}
+.navbar .logo {
+  margin-right: auto;
+}
+.navbar .nav_menu {
+  display: flex;
+  gap: 2.69rem;
+}
+.navbar .nav_menu a {
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  transition: all ease-in-out 0.3s;
+}
+.navbar .nav_menu a:hover {
+  color: var(--fc-green);
+}
+.navbar .nav_menu.active {
+  right: 2rem;
+}
+.navbar .hamburger {
+  display: none;
+  position: relative;
+}
+.navbar .hamburger.active {
+  display: none;
+}
+.navbar .hamburger_close {
+  display: none;
+}
+.navbar .hamburger_close.active {
+  display: block;
+}
+
+footer .navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: start;
+  padding: 3.5rem 0;
+}
+footer .navbar svg {
+  fill: #fff;
+}
+footer .navbar svg:hover {
+  fill: var(--fc-green);
+}
+footer .navbar .logo {
+  margin-right: 0;
+}
+footer .navbar a,
+footer .navbar svg {
+  transition: all ease-in-out 0.3s;
+}
+footer .navbar a:hover {
+  color: var(--fc-green);
+}
+footer .footer_nav_menu {
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+  justify-content: center;
+  align-self: flex-start;
+  transition: all;
+}
+footer .footer_nav_menu a {
+  text-decoration: none;
+}
+footer .socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media (max-width: 740px) {
+  footer .navbar {
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+  }
+  footer .footer_nav_menu {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .footer_nav_menu a:first-of-type {
+    margin-inline: auto;
+  }
+  footer .socials {
+    margin-left: 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .navbar .nav_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    background-color: var(--fc-darkGrayBlue);
+    width: 60%;
+    top: 5.5rem;
+    right: 100%;
+    color: #fff;
+    padding: 2.5rem;
+    transition: all ease-in-out 0.3s;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .navbar .hamburger .hamburger_open:active {
+    display: none;
+  }
+}
+button {
+  font-size: var(--fs-sm);
+  text-align: center;
+  border: none;
+}
+button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+button p {
+  padding: 0 1.72rem;
+}
+
+.about_me_btn {
+  background-color: var(--fc-darkBlue);
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.hover {
+  background: var(--fc-green);
+}
+
+.btn_regular {
+  padding: 1rem 2.13rem;
+  background-color: var(--fc-gray-1);
+  border: 1px solid var(--fc-darkBlue);
+  max-width: 12.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--fc-darkBlue);
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+.btn_regular:hover {
+  background-color: var(--fc-darkGrayBlue);
+  color: #fff;
+}
+
+.gray_line {
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  height: 1px;
+  border: 1px solid var(--fc-gray-2);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  margin-top: 6.25rem;
+}
+.card picture {
+  align-self: center;
+}
+.card .card_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.card .card_info h2 {
+  border-top: 1px solid var(--fc-gray-2);
+  padding-top: 6.44rem;
+}
+.card .card_info p {
+  max-width: 21.88rem;
+}
+.card .btn_regular {
+  margin: 0;
+}
+.card .card_footer {
+  padding-bottom: 6.44rem;
+  border-bottom: 1px solid var(--fc-gray-2);
+}/*# sourceMappingURL=main.css.map */

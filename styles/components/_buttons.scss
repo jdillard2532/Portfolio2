@@ -1,0 +1,50 @@
+button {
+  font-size: var(--fs-sm);
+  text-align: center;
+  border: none;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+  p {
+    padding: 0 1.72rem;
+  }
+}
+
+.about_me_btn {
+  background-color: var(--fc-darkBlue);
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.hover {
+  background: var(--fc-green);
+}
+
+.btn_regular {
+  padding: 1rem 2.13rem;
+  background-color: var(--fc-gray-1);
+  border: 1px solid var(--fc-darkBlue);
+  max-width: 12.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--fc-darkBlue);
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: var(--fc-darkGrayBlue);
+    color: #fff;
+  }
+}
+
+.gray_line {
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  height: 1px;
+  border: 1px solid var(--fc-gray-2);
+}

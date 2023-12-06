@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  padding: 2rem 0;
+  svg {
+    fill: #33323d;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      fill: var(--fc-green);
+    }
+  }
+  .logo {
+    margin-right: auto;
+  }
+  .nav_menu {
+    display: flex;
+    gap: 2.69rem;
+    a {
+      text-decoration: none;
+      font-size: var(--fs-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.125rem;
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        color: var(--fc-green);
+      }
+    }
+    &.active {
+      right: 2rem;
+    }
+  }
+  .hamburger {
+    display: none;
+    position: relative;
+    &.active {
+      display: none;
+    }
+  }
+  .hamburger_close {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+footer {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, (minmax(400px, 1fr)));
+    justify-items: start;
+    padding: 3.5rem 0;
+    svg {
+      fill: #fff;
+    }
+    svg:hover {
+      fill: var(--fc-green);
+    }
+
+    .logo {
+      margin-right: 0;
+    }
+    a,
+    svg {
+      transition: all ease-in-out 0.3s;
+    }
+    a:hover {
+      color: var(--fc-green);
+    }
+  }
+  .footer_nav_menu {
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+    justify-content: center;
+    align-self: flex-start;
+    transition: all;
+    a {
+      text-decoration: none;
+    }
+  }
+  .socials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+//750px
+
+@media (max-width: 740px) {
+  footer {
+    .navbar {
+      justify-content: center;
+      justify-items: center;
+      gap: 2rem;
+    }
+    .footer_nav_menu {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      a:first-of-type {
+        margin-inline: auto;
+      }
+    }
+    .socials {
+      margin-left: 0;
+    }
+  }
+}
+
+//600px
+@media (max-width: 37.5em) {
+  .navbar {
+    .nav_menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      text-align: center;
+      background-color: var(--fc-darkGrayBlue);
+      width: 60%;
+      top: 5.5rem;
+      right: 100%;
+      color: #fff;
+      padding: 2.5rem;
+      transition: all ease-in-out 0.3s;
+    }
+    .hamburger {
+      display: block;
+      .hamburger_open:active {
+        display: none;
+      }
+    }
+  }
+}

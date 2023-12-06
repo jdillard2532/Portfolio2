@@ -1,0 +1,63 @@
+:root {
+  //font size
+  font-size: 16px;
+  //color variables
+  --fc-green: rgba(95, 180, 162, 1);
+  --fc-darkBlue: rgba(32, 58, 76, 1);
+  --fc-darkGrayBlue: rgba(51, 50, 61, 1);
+  --fc-gray-1: rgba(250, 250, 250, 1);
+  --fc-gray-2: rgba(234, 234, 235, 1);
+  --fc-red: rgba(244, 48, 48, 1);
+
+  //font family & weight
+  --ff-primary: "Public Sans", sans-serif;
+  --ff-secondary: "Ibarra Real Nova", serif;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  //font size
+  --fs-xl: 3.125rem;
+  --fs-l: 2.5rem;
+  --fs-m: 2rem;
+  --fs-sm: 0.75rem;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--fc-gray-1);
+  color: var(--fc-darkGrayBlue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-secondary);
+}
+
+h1 {
+  font-size: 2.1875rem;
+  font-size: clamp(
+    2.1875rem,
+    1.7613636363636365rem + 1.8181818181818181vw,
+    3.125rem
+  );
+  line-height: 3.125rem;
+  letter-spacing: -0.028rem;
+  font-weight: var(--fw-700);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.022rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.018rem;
+  font-weight: var(--fw-400);
+}
+
+.green {
+  color: var(--fc-green);
+}
