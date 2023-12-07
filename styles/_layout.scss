@@ -123,7 +123,8 @@ footer {
   padding-top: 7.25rem;
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-template-columns: 1fr 3fr;
     gap: 5rem;
     .card {
       margin: 0;
@@ -150,7 +151,63 @@ footer {
         flex-direction: column;
         gap: 2rem;
       }
+      img {
+        min-height: 434px;
+      }
     }
+    .project_info_tablet {
+      display: none;
+    }
+  }
+}
+
+.view_project_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  margin-top: 4rem;
+  .project_next,
+  .project_prev {
+    padding: 2rem 0;
+    border-top: 1px solid var(--fc-gray-2);
+    border-bottom: 1px solid var(--fc-gray-2);
+    svg {
+      fill: none;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      text-decoration: none;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        color: #fff;
+        background-color: var(--fc-darkGrayBlue);
+        svg {
+          fill: #fff;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .project_next {
+    border-left: 1px solid var(--fc-gray-2);
+    a {
+      justify-content: end;
+    }
+    p,
+    h3 {
+      text-align: right;
+    }
+  }
+
+  p {
+    opacity: 0.5;
+  }
+  .next_mobile {
+    display: none;
+    margin-left: auto;
   }
 }
 
@@ -161,6 +218,36 @@ footer {
       grid-column: 1/10;
       h1 {
         padding: 1.5rem 1.5rem 1.5rem 0;
+      }
+    }
+  }
+}
+
+//1050px
+@media (max-width: 65.63em) {
+  .portfolio_detail_section {
+    .wrapper {
+      grid-template-columns: 1fr;
+      .card {
+        border-top: 1px solid var(--fc-gray-2);
+        border-bottom: 1px solid var(--fc-gray-2);
+        padding: 5rem 0;
+        align-items: center;
+        h2,
+        .card_footer {
+          border: none;
+          padding: 0;
+          margin-top: 1.5rem;
+        }
+      }
+      .card_info {
+        gap: 1rem;
+      }
+      .project_info_tablet {
+        display: block;
+      }
+      .project_info_desktop {
+        display: none;
       }
     }
   }
@@ -216,6 +303,32 @@ footer {
       }
     }
   }
+  .portfolio_detail_header {
+    margin-top: 2rem;
+  }
+  .portfolio_detail_section {
+    padding-top: 2rem;
+    .wrapper {
+      grid-template-columns: 1fr;
+      .card {
+        justify-items: center;
+        padding: 2.5rem 0 4.5rem 0;
+      }
+
+      .project_info_tablet {
+        display: none;
+      }
+      .project_info_desktop {
+        display: block;
+      }
+      .detail {
+        img {
+          min-height: 200px;
+        }
+      }
+    }
+  }
+
   .aboutme_contact_section {
     .gray_line {
       display: none;
@@ -247,6 +360,31 @@ footer {
     .wrapper {
       justify-content: center;
       text-align: center;
+    }
+  }
+}
+
+//500px
+@media (max-width: 500px) {
+  .view_project_grid {
+    .project_prev,
+    .project_next {
+      a {
+        flex-direction: column;
+        height: 100%;
+        align-items: normal;
+        div {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .next_mobile {
+      display: block;
+      justify-content: end;
+    }
+    .next_tablet {
+      display: none;
     }
   }
 }
