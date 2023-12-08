@@ -713,12 +713,13 @@ button p {
   padding: 0.5rem 2.13rem;
   background-color: var(--fc-gray-1);
   border: 1px solid var(--fc-darkBlue);
-  max-width: 12.5rem;
+  max-width: 14rem;
   margin-top: 1rem;
   text-decoration: none;
   color: var(--fc-darkBlue);
   text-align: center;
   transition: all ease-in-out 0.3s;
+  text-transform: uppercase;
 }
 .btn_regular:hover {
   background-color: var(--fc-darkGrayBlue);
