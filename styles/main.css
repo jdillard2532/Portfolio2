@@ -537,7 +537,7 @@ main {
   display: flex;
   margin-inline: auto;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem 0;
 }
 .navbar svg {
   fill: #33323d;
