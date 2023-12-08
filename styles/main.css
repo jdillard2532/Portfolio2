@@ -148,7 +148,7 @@ h3 {
 }
 
 .wrapper {
-  max-width: 73.44rem;
+  max-width: 74rem;
   margin-inline: auto;
   padding: 0 2.56rem;
 }
@@ -180,7 +180,7 @@ h3 {
 }
 
 .homepage_aboutme_section .wrapper {
-  padding-top: 11rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   align-items: center;
