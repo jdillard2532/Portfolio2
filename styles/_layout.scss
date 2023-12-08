@@ -36,7 +36,7 @@
 
 .homepage_aboutme_section {
   .wrapper {
-    padding-top: 10.25rem;
+    padding-top: 11rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     align-items: center;
@@ -78,6 +78,9 @@
 }
 footer {
   background-color: var(--fc-darkGrayBlue);
+  .navbar {
+    padding: 1.5rem 0;
+  }
 }
 
 .portfolio_detail_header {

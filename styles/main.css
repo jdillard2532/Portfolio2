@@ -179,7 +179,7 @@ h3 {
 }
 
 .homepage_aboutme_section .wrapper {
-  padding-top: 10.25rem;
+  padding-top: 11rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   align-items: center;
@@ -221,6 +221,9 @@ h3 {
 
 footer {
   background-color: var(--fc-darkGrayBlue);
+}
+footer .navbar {
+  padding: 1.5rem 0;
 }
 
 .portfolio_detail_header {
@@ -700,7 +703,7 @@ button p {
 }
 
 .btn_regular {
-  padding: 1rem 2.13rem;
+  padding: 0.5rem 2.13rem;
   background-color: var(--fc-gray-1);
   border: 1px solid var(--fc-darkBlue);
   max-width: 12.5rem;
@@ -716,7 +719,7 @@ button p {
 }
 
 .btn_submit {
-  padding: 1rem 2.13rem;
+  padding: 0.5rem 2.13rem;
   background-color: var(--fc-darkBlue);
   max-width: 12.5rem;
   margin-top: 1rem;
