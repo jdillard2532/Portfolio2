@@ -91,6 +91,7 @@ footer {
     transition: all;
     a {
       text-decoration: none;
+      text-transform: uppercase;
     }
   }
   .socials {
@@ -127,6 +128,7 @@ footer {
 //600px
 @media (max-width: 37.5em) {
   .navbar {
+    padding: 2.5rem 0;
     .nav_menu {
       display: flex;
       flex-direction: column;
