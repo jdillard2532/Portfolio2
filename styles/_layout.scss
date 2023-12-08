@@ -80,39 +80,6 @@ footer {
   background-color: var(--fc-darkGrayBlue);
 }
 
-// .portfolio_section {
-//   .card {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-//     justify-items: center;
-//     gap: 2rem;
-//     margin-top: 6.25rem;
-//     picture {
-//       align-self: center;
-//     }
-//     .card_info {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 2rem;
-
-//       justify-content: center;
-//       h2 {
-//         border-top: 1px solid var(--fc-gray-2);
-//         padding-top: 6.44rem;
-//       }
-//       p {
-//         max-width: 21.88rem;
-//       }
-//     }
-//     .btn_regular {
-//       margin: 0;
-//     }
-//     .card_footer {
-//       padding-bottom: 6.44rem;
-//       border-bottom: 1px solid var(--fc-gray-2);
-//     }
-//   }
-// }
 .portfolio_detail_header {
   margin-top: 5rem;
   img {
@@ -123,7 +90,6 @@ footer {
   padding-top: 7.25rem;
   .wrapper {
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-template-columns: 1fr 3fr;
     gap: 5rem;
     .card {
@@ -208,6 +174,75 @@ footer {
   .next_mobile {
     display: none;
     margin-left: auto;
+  }
+}
+
+.contact {
+  .wrapper {
+    margin-top: 6.44rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--fc-gray-2);
+  }
+  .contact_inTouch,
+  .contact_form_section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 7.8rem;
+  }
+  .contact_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    svg {
+      fill: #33323d;
+      transition: all ease-in-out 0.3s;
+    }
+
+    svg:hover {
+      cursor: pointer;
+      fill: var(--fc-green);
+    }
+  }
+  .contact_form_section {
+    padding-top: 2.94rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--fc-gray-2);
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem 1rem;
+      }
+
+      textarea,
+      input {
+        background-color: rgba(51, 50, 61, 0.1);
+        border: none;
+      }
+      textarea {
+        resize: none;
+      }
+    }
+  }
+}
+
+//768
+@media (max-width: 900px) {
+  .contact {
+    .contact_inTouch,
+    .contact_form_section {
+      display: block;
+      // grid-template-columns: 1fr 2fr;
+      // gap: 7.8rem;
+      p {
+        margin: 1.5rem 0;
+      }
+    }
   }
 }
 

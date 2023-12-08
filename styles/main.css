@@ -323,6 +323,65 @@ footer {
   margin-left: auto;
 }
 
+.contact .wrapper {
+  margin-top: 6.44rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--fc-gray-2);
+}
+.contact .contact_inTouch,
+.contact .contact_form_section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 7.8rem;
+}
+.contact .contact_socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact .contact_socials svg {
+  fill: #33323d;
+  transition: all ease-in-out 0.3s;
+}
+.contact .contact_socials svg:hover {
+  cursor: pointer;
+  fill: var(--fc-green);
+}
+.contact .contact_form_section {
+  padding-top: 2.94rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--fc-gray-2);
+}
+.contact .contact_form_section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact .contact_form_section form input,
+.contact .contact_form_section form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.contact .contact_form_section form textarea,
+.contact .contact_form_section form input {
+  background-color: rgba(51, 50, 61, 0.1);
+  border: none;
+}
+.contact .contact_form_section form textarea {
+  resize: none;
+}
+
+@media (max-width: 900px) {
+  .contact .contact_inTouch,
+  .contact .contact_form_section {
+    display: block;
+  }
+  .contact .contact_inTouch p,
+  .contact .contact_form_section p {
+    margin: 1.5rem 0;
+  }
+}
 @media (max-width: 68.75em) {
   .homepage_header .header_Info {
     grid-column: 1/10;

@@ -1,51 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo Project</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Home
-  Portfolio
-  Contact Me
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="navbar">
+          <a href="index.html" class="logo"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
+              <path
+                fill-rule="evenodd"
+                d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"
+              />
+            </svg>
+          </a>
+          <ul class="nav_menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+          </ul>
 
-  Fylo
+          <div class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13">
+              <g fill="#33323D" fill-rule="evenodd">
+                <path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z" />
+              </g>
+            </svg>
+          </div>
+          <div class="hamburger_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19">
+              <path
+                fill="#33323D"
+                fill-rule="evenodd"
+                d="M17.132.661l.707.707L9.707 9.5l8.132 8.132-.707.707L9 10.207.868 18.34l-.707-.707L8.293 9.5.161 1.368.868.661 9 8.793 17.132.661z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="portfolio_detail_header">
+      <div class="wrapper">
+        <img src="images/detail/desktop/image-fylo-hero@2x.jpg" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="portfolio_detail_section">
+        <div class="wrapper">
+          <div class="card_wrapper">
+            <div class="card">
+              <div class="card_info">
+                <h2>Fylo</h2>
+                <p class="project_info_desktop">
+                  This project was built in pure HTML and CSS. I had mobile and
+                  desktop designs to work to and built it so that it was
+                  fully-responsive. I took a mobile-first approach and used
+                  modern CSS like Flexbox and Grid for layout purposes.
+                </p>
+                <p class="green">Interaction Design / Front End Development</p>
+                <p class="green">HTML / CSS / JS</p>
+                <div class="card_footer">
+                  <a href="manage.html" class="btn_regular">Visit Website</a>
+                </div>
+              </div>
+              <div class="project_info_tablet">
+                <p>
+                  This project was built in pure HTML and CSS. I had mobile and
+                  desktop designs to work to and built it so that it was
+                  fully-responsive. I took a mobile-first approach and used
+                  modern CSS like Flexbox and Grid for layout purposes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail">
+            <div>
+              <h3>Project Background</h3>
+              <p>
+                This project was a front-end challenge from Frontend Mentor.
+                It’s a platform that enables you to practice building websites
+                to a design and project brief. Each challenge includes mobile
+                and desktop designs to show how the website should look at
+                different screen sizes. Creating these projects has helped me
+                refine my workflow and solve real-world coding problems. I’ve
+                learned something new with each project, helping me to improve
+                and adapt my style.
+              </p>
+            </div>
+            <div>
+              <h3>Static Previews</h3>
+              <img
+                src="images/detail/desktop/image-fylo-preview-1@2x.jpg"
+                alt=""
+              />
+              <img
+                src="images/detail/desktop/image-fylo-preview-2@2x.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view_project">
+        <div class="wrapper">
+          <div class="view_project_grid">
+            <div class="project_prev">
+              <a href="insure.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+                  <path stroke="#33323D" d="M9 0L1 8l8 8" />
+                </svg>
+                <div>
+                  <h3>Insure</h3>
+                  <p>Previous Project</p>
+                </div>
+              </a>
+            </div>
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to 
-  work to and built it so that it was fully-responsive. I took a mobile-first approach 
-  and used modern CSS like Flexbox and Grid for layout purposes.
+            <div class="project_next">
+              <a href="manage.html">
+                <svg
+                  class="next_mobile"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                >
+                  <path stroke="#33323D" d="M1 0l8 8-8 8" />
+                </svg>
+                <div>
+                  <h3>Manage</h3>
+                  <p>Next Project</p>
+                </div>
 
-  Interaction Design / Front End Development
-
-  HTML / CSS
-
-  Visit Website
-
-  Project Background
-
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
-
-  Static Previews
-
-  Insure
-  Previous Project
-
-  Manage
-  Next Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+                <svg
+                  class="next_tablet"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="16"
+                >
+                  <path stroke="#33323D" d="M1 0l8 8-8 8" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme_contact_section">
+        <div class="wrapper">
+          <h2>Interested in doing a project together?</h2>
+          <span class="gray_line"></span>
+          <a href="contact.html" class="btn_regular">Contact Me</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
