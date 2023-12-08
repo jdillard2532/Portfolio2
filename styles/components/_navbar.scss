@@ -84,7 +84,7 @@ footer {
   }
   .footer_nav_menu {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     color: #fff;
     justify-content: center;
     align-self: flex-start;
@@ -94,6 +94,8 @@ footer {
       font-size: var(--fs-sm);
       text-decoration: none;
       text-transform: uppercase;
+      font-weight: var(--fw-700);
+      letter-spacing: 0.1rem;
     }
   }
   .socials {
