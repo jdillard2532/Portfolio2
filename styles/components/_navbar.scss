@@ -88,8 +88,10 @@ footer {
     color: #fff;
     justify-content: center;
     align-self: flex-start;
+    align-items: center;
     transition: all;
     a {
+      font-size: var(--fs-sm);
       text-decoration: none;
       text-transform: uppercase;
     }

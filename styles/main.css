@@ -613,9 +613,11 @@ footer .footer_nav_menu {
   color: #fff;
   justify-content: center;
   align-self: flex-start;
+  align-items: center;
   transition: all;
 }
 footer .footer_nav_menu a {
+  font-size: var(--fs-sm);
   text-decoration: none;
   text-transform: uppercase;
 }
