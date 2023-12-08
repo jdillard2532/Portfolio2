@@ -101,34 +101,40 @@
               <div>
                 <label for="name">Name: </label>
                 <input
+                  class="contact_info"
                   type="text"
                   name="name"
                   id="name"
                   placeholder="John Doe"
+                  title="Please enter your name"
                   required
                 />
               </div>
               <div>
                 <label for="email">Enter your email: </label>
                 <input
+                  class="contact_info"
                   type="email"
                   name="email"
                   id="email"
                   placeholder="johnDoe@gmail.com"
+                  title="Please use a valid email address"
                   required
                 />
               </div>
               <div>
                 <label for="message">Message</label>
                 <textarea
+                  class="contact_info"
                   type="text"
                   name="message"
                   id="message"
                   placeholder="How Can I Help?"
+                  required
                 >
                 </textarea>
               </div>
-              <button type="submit" class=".btn_regular">Send Message</button>
+              <button type="submit" class="btn_submit">Send Message</button>
             </form>
           </div>
         </div>
@@ -184,5 +190,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

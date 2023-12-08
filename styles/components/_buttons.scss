@@ -19,6 +19,18 @@ button {
   background-color: var(--fc-darkBlue);
   color: #fff;
   transition: all ease-in-out 0.3s;
+  max-width: 12.5rem;
+  a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    p {
+      margin-inline: auto;
+    }
+  }
+  &:hover {
+    background-color: var(--fc-green);
+  }
 }
 
 .hover {
@@ -37,6 +49,23 @@ button {
   transition: all ease-in-out 0.3s;
   &:hover {
     background-color: var(--fc-darkGrayBlue);
+    color: #fff;
+  }
+}
+
+.btn_submit {
+  padding: 1rem 2.13rem;
+  background-color: var(--fc-darkBlue);
+  max-width: 12.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--fc-green);
     color: #fff;
   }
 }

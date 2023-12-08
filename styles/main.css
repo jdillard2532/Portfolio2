@@ -357,6 +357,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 .contact .contact_form_section form input,
 .contact .contact_form_section form textarea {
@@ -419,6 +420,9 @@ footer {
 @media (max-width: 56.31em) {
   .homepage_header picture img {
     max-height: 600px;
+  }
+  .portfolio_section .card {
+    margin-top: 2rem;
   }
   .portfolio_section img {
     max-width: 400px;
@@ -491,6 +495,12 @@ footer {
   .aboutme_contact_section .wrapper {
     justify-content: center;
     text-align: center;
+  }
+  .aboutme_contact_section .wrapper a {
+    margin-top: 1rem;
+  }
+  .contact .wrapper {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -671,6 +681,18 @@ button p {
   background-color: var(--fc-darkBlue);
   color: #fff;
   transition: all ease-in-out 0.3s;
+  max-width: 12.5rem;
+}
+.about_me_btn a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.about_me_btn a p {
+  margin-inline: auto;
+}
+.about_me_btn:hover {
+  background-color: var(--fc-green);
 }
 
 .hover {
@@ -690,6 +712,23 @@ button p {
 }
 .btn_regular:hover {
   background-color: var(--fc-darkGrayBlue);
+  color: #fff;
+}
+
+.btn_submit {
+  padding: 1rem 2.13rem;
+  background-color: var(--fc-darkBlue);
+  max-width: 12.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+  text-transform: uppercase;
+}
+.btn_submit:hover {
+  cursor: pointer;
+  background-color: var(--fc-green);
   color: #fff;
 }
 

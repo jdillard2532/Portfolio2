@@ -212,6 +212,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      margin-top: 1rem;
 
       input,
       textarea {
@@ -297,6 +298,9 @@ footer {
     }
   }
   .portfolio_section {
+    .card {
+      margin-top: 2rem;
+    }
     img {
       max-width: 400px;
       margin-inline: auto;
@@ -395,6 +399,14 @@ footer {
     .wrapper {
       justify-content: center;
       text-align: center;
+      a {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .contact {
+    .wrapper {
+      margin-top: 2rem;
     }
   }
 }
