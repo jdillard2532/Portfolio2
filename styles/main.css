@@ -178,6 +178,9 @@ h3 {
 .homepage_header .header_Info h1 {
   padding: 2.5rem 2rem 2.5rem 0;
 }
+.homepage_header .header_Info p {
+  text-transform: uppercase;
+}
 
 .homepage_aboutme_section .wrapper {
   padding-top: 10rem;
